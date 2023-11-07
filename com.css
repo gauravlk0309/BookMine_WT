@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+nav {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.8)), url('trans.jpg');
+    height: 10vh;
+    width: 100vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #b5b5b5;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #2b8ea9;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eng-bok {
+    background-image: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.3)), url(trans.jpg);
+    width: 340px;
+    display: flex;
+    margin-right: 31px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.book-p {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.com-i {
+    width: 200px;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(138, 111, 79);
+}
+
+.tooltip-wrap {
+    position: relative;
+}
+
+.tooltip-wrap .tooltip-content {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-color: #ff0606;
+    padding: .5em;
+    min-width: 10rem;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+    display: block;
+}
